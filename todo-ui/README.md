@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Context
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our fantastic product owner has a wonderful, amazing and revolutionary idea... he wants to build a new Todo application.
+He has a good idea of the application behavior and comes with a backlog containing the following user stories :
 
-## Available Scripts
+# User stories
 
-In the project directory, you can run:
+## 1 : List my TODOs
 
-### `npm start`
+### Description :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+As a user I would like to list my current todos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Acceptance criterias :
 
-### `npm test`
+- Each todo could have, at minimal, a related state and title
+- Some hard-coded todos will be initialized in this context to demonstrate the tool
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 2 : Change a TODO state
 
-### `npm run build`
+### Description :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As a user I would like to change a todo state by checking a "box"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Acceptance criterias :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- When a todo is done, it should be placed at the bottom of the list and should be crossed out
 
-### `npm run eject`
+## 3 : Detail a TODO
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Description :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+As a user I would like to display one of my todo in a separate or dedicated view.
+This todo will contain its title and a description (which is a new information not shown in the previous view).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Acceptance criterias :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- We can click on a todo (by any way) to access the details view of the todo
+- The todo could be accessed via a unique URL
 
-## Learn More
+## 4 : Add a new TODO
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Description :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+As a user I would like to add a new todo in my list
 
-### Code Splitting
+### Acceptance criterias :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- The todo title is required
+- The todo description can be empty
+- The newly created todo has to be on top of the list of todos
+- You are free to choose the design / interaction
 
-### Analyzing the Bundle Size
+# Technical environment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You're working in the WebFactory which provides the following technical recommendations :
 
-### Making a Progressive Web App
+- The backend application should be based on your preferred languages (Java , JS, PHP, Python, Go, C++, ...) and/or Framework (Spring Boot, Django, .NetCore , NodeJS, Angular, React, ...)
+- To keep the UI simple
+- Code quality is very important, so all the code has to be covered by unit tests
+- Each user story should be realized in its own commit on master
+- The product owner is curious and likes to read the application code on Github and test it via Github Pages
+- The application should have a mocked backend and store all todos on it (extension of HttpXhrBackend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Bonus
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can add any new functionality in this wonderful project if you want to, in order to satisfy your PO 😉
