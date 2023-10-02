@@ -1,7 +1,8 @@
 // fichier TodoDetails.js pour afficher les details de Todo
+//modules
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-//personal
+//local file
 import strings from "../utils/strings.js";
 
 const TodoDetails = ({ todos }) => {
