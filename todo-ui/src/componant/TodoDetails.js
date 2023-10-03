@@ -7,7 +7,7 @@ import strings from "../utils/strings.js";
 
 const TodoDetails = ({ todos }) => {
   const { id } = useParams();
-  const todo = todos.find((todo) => todo.id === parseInt(id, 10));
+  const todo = todos.find((todo) => todo._id === id);
 
   if (!todo) {
     return <div>{strings.todoDetails.notFoundTodo}</div>;

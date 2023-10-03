@@ -10,6 +10,7 @@
 }
 
 .form-group {
+  color: #60a7f4;
   margin-bottom: 15px;
 }
 
@@ -33,7 +34,7 @@ textarea {
 }
 
 .submit-button {
-  background-color: #007bff;
+  background-color: #60a7f4;
   color: white;
   border: none;
   border-radius: 5px;
@@ -42,5 +43,5 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #60a7f4;
 }

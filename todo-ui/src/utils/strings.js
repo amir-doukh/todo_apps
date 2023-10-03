@@ -1,9 +1,13 @@
 //Le fichier strings.js pour regrouper tous les chaines des caractères
 const strings = {
-  todoList: { title: "Liste de TODO" },
+  todoList: {
+    title: "Liste de TODO",
+
+    emptyListTodo: "La liste de élements est vide",
+  },
   todoDetails: {
     backButon: "Retour à la liste",
-    notFoundTodo: "Elément n'existe pas ",
+    notFoundTodo: "Elément n'existe pas",
   },
   addTodoItem: {
     addButon: "Ajouter élément",
@@ -15,6 +19,10 @@ const strings = {
     butonCancel: "Annuler",
     msgRequiredElement: {
       requiredTitleItem: "Le titre est obligatoire",
+    },
+    toast: {
+      msgSuccess: "L'élément est crée avec succes ! ",
+      msgError: "Problème de création d'élément  ! ",
     },
   },
 };

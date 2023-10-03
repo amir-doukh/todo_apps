@@ -65,3 +65,14 @@ You're working in the WebFactory which provides the following technical recommen
 # Bonus
 
 You can add any new functionality in this wonderful project if you want to, in order to satisfy your PO 😉
+
+### Solution
+
+Aller vers todo-ui
+
+Taper les commandes suivantes :
+
+- npm install
+- cd ..
+- npm install
+- npm start
