@@ -1,3 +1,6 @@
+/**
+ * factorisation des variables d'environnement
+ */
 const config = {
   apiUrl: "http://localhost:5000/V1/Api",
 };

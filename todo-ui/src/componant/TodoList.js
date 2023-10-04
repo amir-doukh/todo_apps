@@ -3,11 +3,14 @@ import React, { memo, useCallback, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 //personal
-import "../styles/index.css";
+import "../styles/Index.css";
 import strings from "../utils/strings.js";
 import AddTodoItemModal from "./modals/AddTodoItemModal";
 import config from "../config.js";
 //Memoiristaion de componant
+/**
+ * affichage de la liste de items TODO
+ */
 const TodoList = memo(function Todo({ todos, setTodos }) {
   const [openModal, setOpenModal] = useState(false);
   //Utilisation de fonction de memoirisation
@@ -37,11 +40,7 @@ const TodoList = memo(function Todo({ todos, setTodos }) {
       <div className="app">
         <div className="gridTitleTodoList">
           <div>
-            <Button
-              class="backButton"
-              variant="outlined"
-              onClick={handleClickOpen}
-            >
+            <Button variant="outlined" onClick={handleClickOpen}>
               <div className="backButton">{strings.addTodoItem.addButon}</div>
             </Button>
           </div>

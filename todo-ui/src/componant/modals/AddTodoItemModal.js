@@ -7,13 +7,16 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import Toast from "../toast/toast";
+import Toast from "../toast/Toast";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 //local files
 import strings from "../../utils/strings.js";
-import "../../styles/addModal.css";
+import "../../styles/AddModal.css";
 import config from "../../config.js";
+/**
+ * ajout de item
+ */
 const AddTodoItem = memo(({ openModal, setOpenModal }) => {
   //hooks
   const [openToast, setOpenToast] = useState({});

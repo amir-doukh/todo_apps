@@ -2,9 +2,11 @@
 //modules
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-//local file
+//locales
 import strings from "../utils/strings.js";
-
+/**
+ * afficher les details de item
+ */
 const TodoDetails = ({ todos }) => {
   const { id } = useParams();
   const todo = todos.find((todo) => todo._id === id);

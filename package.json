@@ -5,7 +5,8 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon ./bin/www",
-    "client": "cd todo-ui && npm start"
+    "client": "cd todo-ui && npm start",
+    "test": "jest tests"
   },
   "dependencies": {
     "concurrently": "^8.2.1",
@@ -18,5 +19,9 @@
     "mongoose": "^7.5.3",
     "morgan": "~1.9.1",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
   }
 }

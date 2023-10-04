@@ -1,8 +1,10 @@
 //un composant d'affichage de toast
 import React from "react";
 import { Snackbar, Alert } from "@mui/material";
-
-function Toast({ open, message, severity, onClose }) {
+/**
+ * message d'information sur l'etat d'action
+ */
+const Toast = ({ open, message, severity, onClose }) => {
   return (
     <Snackbar open={open} autoHideDuration={2500} onClose={onClose}>
       <Alert severity={severity} onClose={onClose}>
@@ -10,6 +12,6 @@ function Toast({ open, message, severity, onClose }) {
       </Alert>
     </Snackbar>
   );
-}
+};
 
 export default Toast;
